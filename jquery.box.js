@@ -45,7 +45,13 @@
        		var boxContainer = $(this);
        		var boxContainerParent = boxContainer.parent();
 
-      		boxContainer.css('position', 'relative');
+      		boxContainer.css({
+      			'position': 'relative',
+      			'-webkit-box-sizing': 'border-box',
+      			'-moz-box-sizing': 'border-box',
+      			'-o-box-sizing': 'border-box',
+      			'box-sizing': 'border-box'
+      		});
 
        		var boxContainerColumns = args.columns || boxContainer.attr('data-box-columns');
        		var boxContainerRows = args.rows || boxContainer.attr('data-box-rows');
@@ -113,7 +119,11 @@
 	       				'width': theBox.attr('data-box-width')*boxWidth,
 	       				'height': theBox.attr('data-box-height')*boxHeight,
 	       				'padding': boxesSpacing/2,
-	       				'position': 'absolute'
+	       				'position': 'absolute',
+		      			'-webkit-box-sizing': 'border-box',
+		      			'-moz-box-sizing': 'border-box',
+		      			'-o-box-sizing': 'border-box',
+		      			'box-sizing': 'border-box'
 	       			});
 
 			  		var theBoxContent = theBox.find("> .box-content");
@@ -123,7 +133,11 @@
 						'height': theBox.height(),
 						'float': 'left',
 						'overflow': 'hidden',
-						'background': boxesBackground
+						'background': boxesBackground,
+		      			'-webkit-box-sizing': 'border-box',
+		      			'-moz-box-sizing': 'border-box',
+		      			'-o-box-sizing': 'border-box',
+		      			'box-sizing': 'border-box'
 					});
 
 					theBoxContent.addClass(boxesClass);
