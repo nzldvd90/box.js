@@ -1,0 +1,74 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+	font-family: 'Khula', sans-serif;
+
+}
+
+html , body
+{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	background: white;
+}
+
+body
+{
+	padding: 0;
+	background: #E5DFD0;
+}
+
+#box-container1
+{
+	margin: 0 auto;
+}
+
+#box-container1 .custom-box
+{
+	box-shadow: black 0 2px 5px -2px;
+}
+
+#box-container1 .my-light-box p
+{
+	color: #333;
+}
+
+#box-container1 .shadowed-text p
+{
+	color: #fff;
+	text-shadow: black 1px 1px 3px;
+}
+
+.wrapper
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 60px;
+}
+
+h1
+{
+	margin: 0;
+	text-align: center;
+	font-size: 60px;
+	line-height: 60px;
+	color: white;
+	text-shadow: #333 1px 1px 3px;
+	font-weight: bold;
+}
+p
+{
+	/*font-size: 0.8em;*/
+	color: white;
+	margin: 0;
+}
+
+/* TODO: rendere cross-browser box-sizing */
