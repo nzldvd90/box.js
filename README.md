@@ -40,6 +40,42 @@ $("#box-container1").box(
 );
 ```
 
+## Basic usage
+```html
+<div id="box-container1" data-box-columns="3" data-box-rows="2">
+    <div class="box" data-box-top="0" data-box-left="0" data-box-width="2" data-box-height="2">
+        <p>Sample content on 2x2 box</p>
+    </div>
+    <div class="box" data-box-top="0" data-box-left="2" data-box-width="1" data-box-height="2"
+        data-box-background="red">
+        <p>Sample content on a 1x2 box</p>
+    </div>
+    <div class="box" data-box-top="2" data-box-left="1" data-box-width="2" data-box-height="1"
+         data-box-background-image="url('img/1.jpg')" data-box-background-size="cover"
+         data-box-background-position="center">
+        <p>Sample content hover an image</p>
+    </div>
+</div>
+
+.......
+
+<script type="application/javascript">
+    $("#box-container1").box();
+</script>
+
+```
+
+See a more complex example on the demo directory of the repository.
+
 ## Options
 
-To complete.
+### Box container
+
+* columns: indicates the container width (a value M means "M columns");
+* rows: indicates the container height (a value N means "N columns");
+* containerBackground: set the container background (refers to CSS "background:" tag.);
+* boxesBackground: indicates the boxes background if no background property is set to the box element (refers to CSS "background:" tag.);
+* boxesPadding: indicates the padding of the internal boxes;
+* boxesClass: indicates an additional class set to ALL BOXES that can be set to customize the box content;
+* boxesSpacing: indicates the spaces beetween boxes in pixel;
+* containerPadding: indicates the padding beetween borders and internal boxes;
